@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVR Edtech Pvt. Ltd. - Technology Solutions</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: '#FFC82C',
+              dark: '#022C3A',
+              navy: '#011A24',
+              blue: '#0284C7',
+              lightBlue: '#E0F2FE',
+              bgLight: '#F8FAFC'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+  <!-- ================= HEADER & NAV ================= -->
+  <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <div class="bg-brand-yellow p-2.5 rounded-xl font-black text-brand-dark text-xl flex items-center justify-center w-10 h-10 shadow-sm">
+          SVR
+        </div>
+        <div>
+          <span class="block font-black text-brand-dark text-lg leading-tight tracking-wide">SVR EDTECH</span>
+          <span class="block text-[10px] font-bold text-slate-400 tracking-wider uppercase">PVT. LTD.</span>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+        <!-- Dropdown Menu Item -->
+        <div class="relative group cursor-pointer py-6">
+          <button class="flex items-center space-x-1 hover:text-brand-blue transition-colors">
+            <span>SVR Edtech</span>
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="absolute left-0 mt-0 w-64 bg-brand-dark text-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden z-50">
+            <div class="p-4 border-b border-slate-700/50">
+              <a href="#" class="block text-xs uppercase tracking-wider text-slate-400 hover:text-brand-yellow font-bold py-1">Who we are</a>
+              <a href="#" class="block text-xs uppercase tracking-wider text-brand-yellow font-bold py-1">What we offer &rarr;</a>
+            </div>
+            <div class="p-4 bg-slate-900/40">
+              <span class="block text-xs font-bold text-slate-400 mb-2 uppercase tracking-wider">IT Courses</span>
+              <a href="#" class="block text-xs text-slate-300 hover:text-brand-yellow py-1">JAVA Full Stack</a>
+              <a href="#" class="block text-xs text-slate-300 hover:text-brand-yellow py-1">Data Science</a>
+              <span class="block text-xs font-bold text-slate-400 mt-3 mb-2 uppercase tracking-wider">Non IT Courses</span>
+              <a href="#" class="block text-xs text-slate-300 hover:text-brand-yellow py-1">Digital Marketing with AI</a>
+              <a href="#" class="block text-xs text-slate-300 hover:text-brand-yellow py-1">HR</a>
+              <a href="#" class="block text-xs text-slate-300 hover:text-brand-yellow py-1">Tally and Accounting</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group cursor-pointer py-6">
+          <button class="flex items-center space-x-1 hover:text-brand-blue transition-colors">
+            <span>Services</span>
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="absolute left-0 mt-0 w-52 bg-brand-dark text-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-3 z-50">
+            <a href="#" class="block px-3 py-2 text-xs font-medium rounded-lg hover:bg-slate-800 hover:text-brand-yellow">Digital Marketing</a>
+            <a href="#" class="block px-3 py-2 text-xs font-medium rounded-lg hover:bg-slate-800 hover:text-brand-yellow">App Development</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- CTA Button -->
+      <div>
+        <a href="#" class="bg-brand-yellow hover:bg-yellow-400 text-brand-dark font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-xl transition-all shadow-md flex items-center space-x-2">
+          <span>Campus Registration</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative bg-gradient-to-b from-sky-50/50 to-white py-16 lg:py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- Hero Left Text -->
+      <div class="space-y-6">
+        <span class="text-xs font-bold text-slate-400 tracking-widest uppercase">INNOVATE • AUTOMATE • GROW</span>
+        <h1 class="text-4xl sm:text-5xl font-black text-brand-dark leading-tight">
+          Technology Solutions <br />
+          That Power <br />
+          <span class="text-brand-yellow font-black">Business Growth</span>
+        </h1>
+        <p class="text-slate-600 text-base max-w-lg leading-relaxed">
+          We provide end-to-end technology solutions including SaaS, ERP, CRM, Website & App Development, 
+          <strong class="text-slate-800">Digital Marketing</strong> and <strong class="text-slate-800">AI-powered solutions</strong> to help businesses grow smarter and faster.
+        </p>
+        
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="#" class="bg-brand-yellow hover:bg-yellow-400 text-brand-dark font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-xl transition-all shadow-md flex items-center space-x-2">
+            <span>Explore Our Solutions</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <a href="#" class="border border-slate-300 hover:border-brand-dark text-brand-dark font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-xl transition-all flex items-center space-x-2 bg-white shadow-sm">
+            <i data-lucide="message-square" class="w-4 h-4"></i>
+            <span>Talk to an Expert</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Right Graphic/Illustration Container -->
+      <div class="relative flex justify-center items-center">
+        <div class="w-full max-w-lg bg-gradient-to-tr from-sky-100 to-indigo-50 rounded-3xl p-8 border border-sky-100 shadow-xl relative">
+          <!-- Illustration Mock Floating Badges -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white p-4 rounded-2xl shadow-sm flex items-center space-x-3 border border-slate-100">
+              <div class="bg-blue-500 p-2.5 rounded-xl text-white"><i data-lucide="bot" class="w-6 h-6"></i></div>
+              <span class="font-bold text-sm text-slate-700">AI Solutions</span>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm flex items-center space-x-3 border border-slate-100">
+              <div class="bg-purple-500 p-2.5 rounded-xl text-white"><i data-lucide="cog" class="w-6 h-6"></i></div>
+              <span class="font-bold text-sm text-slate-700">ERP Systems</span>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm flex items-center space-x-3 border border-slate-100">
+              <div class="bg-emerald-500 p-2.5 rounded-xl text-white"><i data-lucide="users" class="w-6 h-6"></i></div>
+              <span class="font-bold text-sm text-slate-700">CRM Platform</span>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm flex items-center space-x-3 border border-slate-100">
+              <div class="bg-amber-500 p-2.5 rounded-xl text-white"><i data-lucide="trending-up" class="w-6 h-6"></i></div>
+              <span class="font-bold text-sm text-slate-700">Analytics</span>
+            </div>
+          </div>
+          <!-- Desktop Mockup Graphic -->
+          <div class="mt-6 bg-white p-4 rounded-2xl shadow-md border border-slate-200">
+            <div class="flex items-center space-x-2 border-b border-slate-100 pb-2 mb-3">
+              <div class="w-3 h-3 rounded-full bg-red-400"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+              <div class="w-3 h-3 rounded-full bg-green-400"></div>
+            </div>
+            <div class="h-28 bg-slate-50 rounded-lg flex items-center justify-center text-slate-400 text-xs font-semibold">
+              Dashboard Analytics
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= METRICS BAR ================= -->
+  <section class="bg-sky-50/60 border-y border-sky-100/60 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="flex flex-col items-center">
+        <i data-lucide="shield-check" class="w-8 h-8 text-brand-dark mb-2"></i>
+        <h4 class="font-bold text-slate-800 text-sm">Trusted Technology Partner</h4>
+      </div>
+      <div class="flex flex-col items-center">
+        <i data-lucide="folder-check" class="w-8 h-8 text-brand-dark mb-2"></i>
+        <h4 class="font-bold text-slate-800 text-sm">100+ Projects Delivered</h4>
+      </div>
+      <div class="flex flex-col items-center">
+        <i data-lucide="star" class="w-8 h-8 text-brand-dark mb-2"></i>
+        <h4 class="font-bold text-slate-800 text-sm">Client Satisfaction Our Priority</h4>
+      </div>
+      <div class="flex flex-col items-center">
+        <i data-lucide="line-chart" class="w-8 h-8 text-brand-dark mb-2"></i>
+        <h4 class="font-bold text-slate-800 text-sm">Innovation for Long-Term Growth</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: END-TO-END TECH ================= -->
+  <section class="py-16 text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <span class="text-xs font-bold text-brand-yellow uppercase tracking-wider block mb-1">— End-to-End Technology & Digital Growth Solutions —</span>
+      <p class="text-slate-600 text-sm">From strategy to support, we help businesses build, automate and grow with the right technology.</p>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: COMPREHENSIVE SERVICES ================= -->
+  <section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10">
+        <span class="text-xs font-bold text-brand-blue uppercase tracking-widest">— Our Services</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-dark mt-1">Comprehensive Technology Solutions</h2>
+        <p class="text-slate-500 text-xs sm:text-sm mt-1">From SaaS development to digital marketing services, we offer a complete range of technology solutions tailored to your business needs.</p>
+      </div>
+
+      <!-- Services Grid (8 Cards) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="p-6 bg-slate-50/50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all">
+          <div class="p-3 bg-white rounded-xl w-fit shadow-sm border border-slate-100 text-brand-blue mb-4">
+            <i data-lucide="cloud" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-2 text-sm">SaaS Development</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">Build scalable and secure SaaS products for your business.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="p-6 bg-slate-50/50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all">
+          <div class="p-3 bg-white rounded-xl w-fit shadow-sm border border-slate-100 text-brand-blue mb-4">
+            <i data-lucide="settings" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-2 text-sm">ERP Solutions</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">Streamline operations with powerful ERP software solutions.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="p-6 bg-slate-50/50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all">
+          <div class="p-3 bg-white rounded-xl w-fit shadow-sm border border-slate-100 text-brand-blue mb-4">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-2 text-sm">CRM Development</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">Build stronger customer relationships with CRM solutions.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="p-6 bg-slate-50/50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all">
+          <div class="p-3 bg-white rounded-xl w-fit shadow-sm border border-slate-100 text-brand-blue mb-4">
+            <i data-lucide="code" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-2 text-sm">Website Development</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">Modern, responsive and SEO-friendly websites.</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="p-6 bg-slate-50/50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all">
+          <div class="p-3 bg-white rounded-xl w-fit shadow-sm border border-slate-100 text-brand-blue mb-4">
+            <i data-lucide="smartphone" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-2 text-sm">Mobile App Development</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">iOS & Android apps for better engagement.</p>
+        </div>
+        <!-- Card 6 -->
+        <div class="p-6 bg-slate-50/50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all">
+          <div class="p-3 bg-white rounded-xl w-fit shadow-sm border border-slate-100 text-brand-blue mb-4">
+            <i data-lucide="megaphone" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-2 text-sm">Digital Marketing</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">Grow your brand with result-driven digital marketing services.</p>
+        </div>
+        <!-- Card 7 -->
+        <div class="p-6 bg-slate-50/50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all">
+          <div class="p-3 bg-white rounded-xl w-fit shadow-sm border border-slate-100 text-brand-blue mb-4">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-2 text-sm">AI & Automation</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">Work smarter with AI automation solutions.</p>
+        </div>
+        <!-- Card 8 -->
+        <div class="p-6 bg-slate-50/50 rounded-2xl border border-slate-100 hover:shadow-lg transition-all">
+          <div class="p-3 bg-white rounded-xl w-fit shadow-sm border border-slate-100 text-brand-blue mb-4">
+            <i data-lucide="cloud-lightning" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-800 mb-2 text-sm">Cloud & IT Solutions</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">Secure, scalable and reliable cloud infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: BUSINESS OUTCOMES ================= -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+        <div>
+          <span class="text-xs font-bold text-brand-blue uppercase tracking-widest">— Our Solutions</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-dark mt-1">Built for Better Business Outcomes</h2>
+          <p class="text-slate-500 text-xs sm:text-sm mt-1">Our technology solutions are designed to simplify operations, improve customer experiences and drive sustainable growth.</p>
+        </div>
+        <a href="#" class="mt-4 md:mt-0 font-bold text-xs text-brand-dark hover:underline flex items-center">
+          View All Solutions <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+        </a>
+      </div>
+
+      <!-- 3 Feature Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Feature 1 -->
+        <div class="bg-brand-dark text-white p-8 rounded-2xl flex flex-col justify-between h-72 shadow-md">
+          <div>
+            <i data-lucide="briefcase" class="w-8 h-8 text-brand-yellow mb-4"></i>
+            <h3 class="font-bold text-lg mb-2">Business Management</h3>
+            <p class="text-slate-300 text-xs leading-relaxed">Streamline operations, boost productivity and get complete control with our integrated business management solutions.</p>
+          </div>
+          <a href="#" class="text-brand-yellow text-xs font-bold flex items-center hover:underline">Learn More &rarr;</a>
+        </div>
+        <!-- Feature 2 -->
+        <div class="bg-brand-yellow text-brand-dark p-8 rounded-2xl flex flex-col justify-between h-72 shadow-md">
+          <div>
+            <i data-lucide="users" class="w-8 h-8 text-brand-dark mb-4"></i>
+            <h3 class="font-bold text-lg mb-2">Customer Experience</h3>
+            <p class="text-slate-800 text-xs leading-relaxed">Deliver seamless and personalized experiences across every touchpoint with our customer-focused solutions.</p>
+          </div>
+          <a href="#" class="text-brand-dark text-xs font-bold flex items-center hover:underline">Learn More &rarr;</a>
+        </div>
+        <!-- Feature 3 -->
+        <div class="bg-brand-dark text-white p-8 rounded-2xl flex flex-col justify-between h-72 shadow-md">
+          <div>
+            <i data-lucide="trending-up" class="w-8 h-8 text-brand-yellow mb-4"></i>
+            <h3 class="font-bold text-lg mb-2">Digital Growth</h3>
+            <p class="text-slate-300 text-xs leading-relaxed">Enhance your online presence, reach the right audience and increase revenue with data-driven strategies.</p>
+          </div>
+          <a href="#" class="text-brand-yellow text-xs font-bold flex items-center hover:underline">Learn More &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: DIGITAL MARKETING ================= -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10">
+        <span class="text-xs font-bold text-brand-blue uppercase tracking-widest">— Digital Marketing</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-dark mt-1">Grow Your Brand with Strategic Digital Marketing</h2>
+        <p class="text-slate-500 text-xs sm:text-sm mt-1">Get more visibility, more traffic, and more customers with our result-driven digital marketing services.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4 text-center">
+        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col items-center">
+          <i data-lucide="search" class="w-6 h-6 text-brand-blue mb-2"></i>
+          <span class="text-xs font-bold text-slate-700">SEO Services</span>
+        </div>
+        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col items-center">
+          <i data-lucide="mouse-pointer-click" class="w-6 h-6 text-brand-blue mb-2"></i>
+          <span class="text-xs font-bold text-slate-700">Google Ads & PPC</span>
+        </div>
+        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col items-center">
+          <i data-lucide="share-2" class="w-6 h-6 text-brand-blue mb-2"></i>
+          <span class="text-xs font-bold text-slate-700">Social Media Marketing</span>
+        </div>
+        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col items-center">
+          <i data-lucide="file-text" class="w-6 h-6 text-brand-blue mb-2"></i>
+          <span class="text-xs font-bold text-slate-700">Content Marketing</span>
+        </div>
+        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col items-center">
+          <i data-lucide="bar-chart-2" class="w-6 h-6 text-brand-blue mb-2"></i>
+          <span class="text-xs font-bold text-slate-700">Performance Marketing</span>
+        </div>
+        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col items-center">
+          <i data-lucide="user-plus" class="w-6 h-6 text-brand-blue mb-2"></i>
+          <span class="text-xs font-bold text-slate-700">Lead Generation</span>
+        </div>
+        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100 flex flex-col items-center">
+          <i data-lucide="diamond" class="w-6 h-6 text-brand-blue mb-2"></i>
+          <span class="text-xs font-bold text-slate-700">Branding</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: WHY CHOOSE US ================= -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-8 items-center">
+      <div>
+        <span class="text-xs font-bold text-brand-blue uppercase tracking-widest">— Why Choose SVR Edtech</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-dark mt-1">Your Growth, Our Commitment</h2>
+        <p class="text-slate-500 text-xs sm:text-sm mt-2 leading-relaxed">We combine technology, expertise and a customer-first approach to deliver solutions that create real business impact.</p>
+      </div>
+
+      <div class="lg:col-span-2 grid sm:grid-cols-3 gap-4">
+        <div class="p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
+          <i data-lucide="settings" class="w-6 h-6 text-brand-blue mb-2"></i>
+          <h4 class="font-bold text-xs text-slate-800">Custom Solutions</h4>
+          <p class="text-[11px] text-slate-500 mt-1">Tailored to your unique needs</p>
+        </div>
+        <div class="p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
+          <i data-lucide="maximize" class="w-6 h-6 text-brand-blue mb-2"></i>
+          <h4 class="font-bold text-xs text-slate-800">Scalable Technology</h4>
+          <p class="text-[11px] text-slate-500 mt-1">Built for long-term growth</p>
+        </div>
+        <div class="p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
+          <i data-lucide="target" class="w-6 h-6 text-brand-blue mb-2"></i>
+          <h4 class="font-bold text-xs text-slate-800">Business-Focused Strategy</h4>
+          <p class="text-[11px] text-slate-500 mt-1">Your goals, our priority</p>
+        </div>
+        <div class="p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
+          <i data-lucide="user-check" class="w-6 h-6 text-brand-blue mb-2"></i>
+          <h4 class="font-bold text-xs text-slate-800">Experienced Team</h4>
+          <p class="text-[11px] text-slate-500 mt-1">Skilled & certified professionals</p>
+        </div>
+        <div class="p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
+          <i data-lucide="shield" class="w-6 h-6 text-brand-blue mb-2"></i>
+          <h4 class="font-bold text-xs text-slate-800">Transparent Process</h4>
+          <p class="text-[11px] text-slate-500 mt-1">Clear communication, no hidden costs</p>
+        </div>
+        <div class="p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
+          <i data-lucide="headphones" class="w-6 h-6 text-brand-blue mb-2"></i>
+          <h4 class="font-bold text-xs text-slate-800">Ongoing Support</h4>
+          <p class="text-[11px] text-slate-500 mt-1">We're with you, every step of the way</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: PROCESS ================= -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-xs font-bold text-brand-blue uppercase tracking-widest">— Our Process</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-dark mt-1">From Idea to Impact</h2>
+          <p class="text-slate-500 text-xs sm:text-sm mt-1">A simple, collaborative process to turn your vision into a successful digital solution.</p>
+        </div>
+        <a href="#" class="mt-4 md:mt-0 font-bold text-xs text-brand-dark hover:underline flex items-center">
+          Learn More About Our Process <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+        </a>
+      </div>
+
+      <!-- Steps Flow -->
+      <div class="grid grid-cols-2 md:grid-cols-6 gap-4 text-center relative">
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mb-3">
+            <i data-lucide="lightbulb" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-slate-800">Discover</h4>
+          <p class="text-[10px] text-slate-500 mt-1">Understand your needs</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mb-3">
+            <i data-lucide="map" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-slate-800">Strategize</h4>
+          <p class="text-[10px] text-slate-500 mt-1">Plan for success</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mb-3">
+            <i data-lucide="layout" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-slate-800">Design</h4>
+          <p class="text-[10px] text-slate-500 mt-1">Create the right solution</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mb-3">
+            <i data-lucide="code-2" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-slate-800">Develop</h4>
+          <p class="text-[10px] text-slate-500 mt-1">Build with best practices</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mb-3">
+            <i data-lucide="rocket" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-slate-800">Launch</h4>
+          <p class="text-[10px] text-slate-500 mt-1">Go live with confidence</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mb-3">
+            <i data-lucide="trending-up" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-slate-800">Grow</h4>
+          <p class="text-[10px] text-slate-500 mt-1">Scale together</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: TESTIMONIALS ================= -->
+  <section class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+        <div>
+          <span class="text-xs font-bold text-brand-blue uppercase tracking-widest">— What Our Learners Say</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-dark mt-1">Real People. Real Success.</h2>
+          <p class="text-slate-500 text-xs sm:text-sm mt-1">Hear from our students and professionals who transformed their careers with SVR Edtech.</p>
+        </div>
+        <a href="#" class="mt-4 md:mt-0 font-bold text-xs text-brand-dark hover:underline flex items-center">
+          View All Testimonials <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+        </a>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Testimonial 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+          <div class="flex items-start space-x-4 mb-4">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80" alt="Priya S." class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <p class="text-xs text-slate-600 italic">"The Java Full Stack course was well-structured with excellent trainers. I got placed within 3 months!"</p>
+              <h4 class="font-bold text-xs text-slate-800 mt-2">Priya S.</h4>
+              <span class="text-[10px] text-slate-400">Java Full Stack Graduate</span>
+            </div>
+          </div>
+          <div class="flex text-amber-400 text-xs">★★★★★</div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+          <div class="flex items-start space-x-4 mb-4">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&auto=format&fit=crop&q=80" alt="Rohit K." class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <p class="text-xs text-slate-600 italic">"Digital Marketing with AI course helped me build practical skills. The live projects and support were amazing!"</p>
+              <h4 class="font-bold text-xs text-slate-800 mt-2">Rohit K.</h4>
+              <span class="text-[10px] text-slate-400">Digital Marketing Graduate</span>
+            </div>
+          </div>
+          <div class="flex text-amber-400 text-xs">★★★★★</div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+          <div class="flex items-start space-x-4 mb-4">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&auto=format&fit=crop&q=80" alt="Sneha M." class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <p class="text-xs text-slate-600 italic">"SVR Edtech gave me the right guidance and hands-on training. The HR course is very well designed."</p>
+              <h4 class="font-bold text-xs text-slate-800 mt-2">Sneha M.</h4>
+              <span class="text-[10px] text-slate-400">HR Graduate</span>
+            </div>
+          </div>
+          <div class="flex text-amber-400 text-xs">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION: BOTTOM CTA BANNER ================= -->
+  <section class="bg-brand-dark py-12 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center space-x-4">
+        <div class="p-3 bg-brand-yellow rounded-2xl text-brand-dark hidden sm:block">
+          <i data-lucide="rocket" class="w-8 h-8"></i>
+        </div>
+        <div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white">Take the First Step Towards a Brighter Future</h3>
+          <p class="text-slate-300 text-xs mt-1">Join SVR Edtech and gain the skills, support and confidence to achieve your career goals.</p>
+        </div>
+      </div>
+      <a href="#" class="bg-brand-yellow hover:bg-yellow-400 text-brand-dark font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-xl transition-all shadow-md whitespace-nowrap">
+        Campus Registration &rarr;
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-brand-navy text-slate-300 pt-16 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
+      
+      <!-- Col 1: Brand Info -->
+      <div class="md:col-span-2 space-y-3">
+        <div class="flex items-center space-x-3">
+          <div class="bg-brand-yellow p-2 rounded-lg font-black text-brand-dark text-lg">SVR</div>
+          <div>
+            <span class="block font-black text-white text-base leading-tight">SVR EDTECH PVT. LTD.</span>
+          </div>
+        </div>
+        <p class="text-xs text-slate-400">Technology | Digital Marketing | Growth</p>
+      </div>
+
+      <!-- Col 2: SVR Edtech -->
+      <div>
+        <h5 class="font-bold text-xs text-white uppercase tracking-wider mb-3">SVR Edtech</h5>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#" class="hover:text-brand-yellow">Who we are</a></li>
+          <li><a href="#" class="hover:text-brand-yellow">What we offer</a></li>
+          <li class="pt-2 text-[10px] uppercase text-slate-500 font-bold">IT Courses (Java Full Stack, Data Science)</li>
+          <li class="text-[10px] uppercase text-slate-500 font-bold">Non IT Courses</li>
+          <li class="text-[10px] text-slate-400">Digital Marketing with AI, HR, Tally and Accounting</li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Services & Quick Links -->
+      <div>
+        <h5 class="font-bold text-xs text-white uppercase tracking-wider mb-3">Services</h5>
+        <ul class="space-y-2 text-xs mb-4">
+          <li><a href="#" class="hover:text-brand-yellow">Digital Marketing</a></li>
+          <li><a href="#" class="hover:text-brand-yellow">App Development</a></li>
+        </ul>
+        <h5 class="font-bold text-xs text-white uppercase tracking-wider mb-2">Quick Links</h5>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#" class="hover:text-brand-yellow">Campus Registration</a></li>
+          <li><a href="#" class="hover:text-brand-yellow">About Us</a></li>
+          <li><a href="#" class="hover:text-brand-yellow">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Follow Us -->
+      <div>
+        <h5 class="font-bold text-xs text-white uppercase tracking-wider mb-3">Follow Us</h5>
+        <div class="flex space-x-3 text-slate-400">
+          <a href="#" class="p-2 bg-slate-800 rounded-lg hover:text-white"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+          <a href="#" class="p-2 bg-slate-800 rounded-lg hover:text-white"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          <a href="#" class="p-2 bg-slate-800 rounded-lg hover:text-white"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+          <a href="#" class="p-2 bg-slate-800 rounded-lg hover:text-white"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800/80 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+      <p>&copy; 2025 SVR Edtech Pvt. Ltd. All rights reserved.</p>
+      <div class="flex space-x-4 mt-2 sm:mt-0">
+        <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+        <span>|</span>
+        <a href="#" class="hover:text-slate-400">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
